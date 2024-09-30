@@ -178,3 +178,62 @@ ul{
     width: 100%; /* Full-width container */
     height: 100%; /* Center the text inside the div */
 } 
+/* Media Queries */
+@media (max-width: 768px) { /* For tablets */
+    .main {
+        margin: 60px auto 0 auto; /* Reduce margin for smaller screens */
+    }
+
+    .first {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
+    }
+
+    #numbers {
+        width: 80px; /* Adjust size for numbers */
+        height: 80px;
+        font-size: 24px; /* Smaller font size */
+    }
+
+    input {
+        padding: 12px; /* Adjust input padding */
+    }
+
+    button {
+        width: 40px; /* Smaller button */
+        height: 40px; 
+        font-size: 24px; /* Adjust font size */
+    }
+}
+
+@media (max-width: 480px) { /* For mobile phones */
+    .main {
+        margin: 30px auto 0 auto; /* Further reduce margin for mobile */
+        max-width: 90%; /* Allow the main container to take more width */
+    }
+
+    #progress {
+        height: 8px; /* Smaller progress bar height */
+    }
+
+    #numbers {
+        width: 60px; /* Adjust size for numbers */
+        height: 60px;
+        font-size: 20px; /* Smaller font size */
+    }
+
+    input {
+        padding: 10px; /* Further adjust input padding */
+        font-size: 14px; /* Smaller font size */
+    }
+
+    button {
+        width: 35px; /* Smaller button */
+        height: 35px; 
+        font-size: 20px; /* Adjust font size */
+    }
+
+    .taskItem {
+        font-size: 16px; /* Smaller font size for tasks */
+    }
+}
