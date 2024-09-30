@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="image/logo/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="image/logo/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <title>TO-DO LIST</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="first">
+            <div class="firstSub1">
+                <h1>TO-DO LIST</h1>
+                <p >keep it up</p>
+                <div id="firstSub1Sub1">
+                    <div id="progress" style="width: 0%; height: 10px; background-color: green;"></div>
+                </div>
+            </div>
+            <div class="firstSub2">
+                <p id="numbers">0/0</p>
+            </div>
+        </div>
+        <form action="">
+            <input type="text" id="task-input" placeholder="Enter your task" />
+            <button id="newtask">+</button>
+        </form>
+        <ul id="task-list"></ul>
+    </div>
+    <div id="congrate"></div> 
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+</body>
+
+</html>

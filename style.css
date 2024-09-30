@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --background: #000430;
+    --secondryBack: #171c48;
+    --text: #fff;
+    --purple: #828dff;
+    --teal: #24feee;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--text);
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 120px auto 0 auto ;
+    max-width: 500px;
+    
+}
+
+.first {
+    padding: 30px;
+    border: 2px solid var(--purple);
+    border-radius: 20px;
+    display: flex;
+    justify-content:space-between;
+    gap: 20px;
+    width: 100%;
+}
+#firstSub1Sub1{
+    width: 500%;
+    height: 10px;
+    background-color:var(--secondryBack);
+    border-radius: 5px;
+    margin-top: 20px;
+}
+#progress{
+    width:50%;
+    height:10px;
+    background-color: var(--teal);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+#numbers {
+    width: 100px;
+    height: 100px;
+    background-color: var(--purple);
+    background-color: var(--purple);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 30px;
+    font-weight: bold;
+}
+form{
+    margin-top: 60px;   
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+input{
+    flex:1 ;
+    padding: 16px;
+    background-color: var(--secondryBack);
+    border-radius: 10px;
+    border: 1px solid var(--purple);
+    outline: none;
+    color: var(--text);
+}
+button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--purple);
+    font-size: 30px;
+    color: var(--text);
+    font-weight: bold;
+    outline: none;
+}
+.task-list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 30px;
+    width: 100%;
+    list-style: none;
+
+}
+.taskItem i{
+    width: 24px;
+    height: 24px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+.task{
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+.task input{
+    width: 20px;
+    height: 20px;
+}
+.taskItem{
+    width: 100%;
+    display: flex;
+    background-color: var(--secondryBack);
+    padding: 10px;
+    border-radius: 10px;
+    justify-content: space-between;
+}
+ul{
+    list-style: none;
+}
+.taskItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    list-style: none;
+    margin-top: 10%;
+    margin-left: -110%;
+    width: 280%;
+    font-size: 20px;
+}
+.task.completed p {
+    text-decoration: line-through;
+}
+.icons i {
+    cursor: pointer;
+    margin-left: 10px;
+}
+#firstSub1Sub1 {
+    width: 190%;
+    background-color: #ddd;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+#progress {
+    height: 10px;
+    background-color: green;
+    border-radius: 5px;
+    transition: width 0.3s ease;
+}
+#congrate {
+ /* Full-height container */
+    /* background-color: rgba(0, 0, 0, 0.5); Optional: Add background overlay */
+}
+
+#cong {
+    font-size: 60px;
+    color: white; /* Set text color for better visibility */
+    text-align: center;
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100%; /* Full-width container */
+    height: 100%; /* Center the text inside the div */
+} 
